@@ -1,0 +1,39 @@
+---
+title: "splitstree"
+format: html
+editor: visual
+toc: true
+toc-title: Document Contents
+number-selections: true
+embed-resources: true
+---
+
+##Load packages
+
+```{r}
+library(vcfR)
+library(adegenet)
+library(StAMPP)
+```
+
+##Read in vcf
+
+```{r}
+#read in vcf
+v.outgroup<-read.vcfR("~/Desktop/Projects/Dicaeum/vcfs/filtered.miat.snps.vcf.gz")
+```
+
+##Generate splitstree
+
+```{r}
+#convert to genlight
+gen<-vcfR2genlight(v.outgroup)
+#shorten names
+gen@ind.names<-gsub("D_","",gen@ind.names)
+#assign populations (a StaMPP requirement)
+gen@pop<-as.factor(gen@ind.names)
+#generate pairwise divergence matrix
+sample.div <- stamppNeisD(gen, pop = FALSE)
+#export for splitstree
+stamppPhylip(distance.mat=sample.div, file="~/Desktop/Projects/Dicaeum/splitstree/dicaeum.miat.100.splits.txt")
+```

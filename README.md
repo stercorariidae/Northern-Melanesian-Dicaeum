@@ -13,7 +13,7 @@ This is the repository contains the code and visualizations associated with the 
  
 **Tree Analyses**
 - Unrooted phylogenetic network: https://github.com/stercorariidae/Northern-Melanesian-Dicaeum/blob/main/Splitstree/splitstree.miat.qmd
-- Concatenated maximum-likelihood phylogenetic tree:
+- Concatenated maximum-likelihood phylogenetic tree: https://github.com/stercorariidae/Northern-Melanesian-Dicaeum/tree/main/IQtree
 - SNAPP:
 
 **Principal component analyses**

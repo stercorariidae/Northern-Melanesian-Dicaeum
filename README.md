@@ -3,7 +3,8 @@
 This is the repository contains the code and visualizations associated with the Northern Melanesia Dicaeum project, associated with the paper titled: "Phylogeography of the northern Melanesian flowerpeckers (genus Dicaeum) reveals previously unrecognized diversity".
 
 **SNP Calling and Filtering**
-
+- Script for indexing, aligning, and calling SNPs: https://github.com/stercorariidae/Northern-Melanesian-Dicaeum/blob/main/SNP%20Calling%20and%20Filtering/run_stacks.sh
+- Script for filtering SNPs: https://github.com/stercorariidae/Northern-Melanesian-Dicaeum/blob/main/SNP%20Calling%20and%20Filtering/SNP.filtering.qmd
 
 **Data**
 - Raw, unfiltered called across all 70 samples (plus two technical replicates): https://github.com/stercorariidae/Northern-Melanesian-Dicaeum/blob/main/Data/populations.snps.vcf.gz

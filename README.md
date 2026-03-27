@@ -12,7 +12,7 @@ This is the repository contains the code and visualizations associated with the 
 - Filtered, unlinked dataset of 1,294 SNPs for all 65 samples: https://github.com/stercorariidae/Northern-Melanesian-Dicaeum/blob/main/Data/filtered.unlinked.snps.vcf.gz
  
 **Tree Analyses**
-- Unrooted phylogenetic network:
+- Unrooted phylogenetic network: https://github.com/stercorariidae/Northern-Melanesian-Dicaeum/blob/main/Splitstree/splitstree.miat.qmd
 - Concatenated maximum-likelihood phylogenetic tree:
 - SNAPP:
 

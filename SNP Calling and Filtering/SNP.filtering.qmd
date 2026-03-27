@@ -1,0 +1,177 @@
+---
+title: "SNP filtering for all samples of all species"
+format: html
+editor: visual
+---
+
+```{r}
+#This script is for SNP filtering, including all samples (i.e. D. concolor, triple plated Shortlands sample, Miat etc.)
+```
+
+##Load packages
+
+```{r}
+#| output: false
+library(vcfR)
+library(SNPfiltR)
+library(StAMPP)
+```
+
+##Read in vcf
+
+```{r}
+#read vcf into this R session as vcfR 
+vcfR <- read.vcfR("~/Desktop/Projects/Dicaeum/vcfs/populations.snps.vcf")
+
+#create popmap
+popmap<-data.frame(id=colnames(vcfR@gt)[2:length(colnames(vcfR@gt))],pop=substr(colnames(vcfR@gt)[2:length(colnames(vcfR@gt))], 3,11))
+```
+
+##Hard filter
+
+```{r}
+#visualize distributions
+hard_filter(vcfR=vcfR)
+```
+
+##Genotype depth/quality
+
+```{r}
+#hard filter to minimum depth of 3, and minimum genotype quality of 30
+vcfR<-hard_filter(vcfR=vcfR, depth = 3, gq = 30)
+```
+
+##Allele balance
+
+```{r}
+#execute allele balance filter
+vcfR<-filter_allele_balance(vcfR, min.ratio = 0.2, max.ratio = 0.8)
+```
+
+##Max depth
+
+```{r}
+#visualize and pick appropriate max depth cutoff
+max_depth(vcfR)
+
+#set appropriate max depth cutoff
+vcfR<-max_depth(vcfR,maxdepth = 200)
+```
+
+##Check vcfR for snps retained
+
+```{r}
+#check how many SNPs
+vcfR
+```
+
+##Removing invariant SNPs
+
+```{r}
+vcfR<-min_mac(vcfR,min.mac = 1)
+```
+
+#Filter to biallelic SNPs only
+
+```{r}
+#vcfR<-filter_biallelic(vcfR)
+```
+
+##Missing data
+
+```{r}
+#run function to visualize per sample missingness
+miss.vcfR<-missing_by_sample(vcfR)
+
+#run function to drop samples above threshold
+#vcfR.trim<-missing_by_sample(vcfR=vcfR.trim, cutoff = 0.5)
+
+#remove samples above 0.5 (except for Miat)
+vcfR.trim<-vcfR[,colnames(vcfR@gt) != "D_aen_32085a"]
+vcfR.trim<-vcfR.trim[,colnames(vcfR.trim@gt) != "D_aen_32085c"]
+vcfR.trim<-vcfR.trim[,colnames(vcfR.trim@gt) != "D_aen_34871"]
+vcfR.trim<-vcfR.trim[,colnames(vcfR.trim@gt) != "D_aen_34852"]
+vcfR.trim<-vcfR.trim[,colnames(vcfR.trim@gt) != "D_aen_34496"]
+vcfR.trim<-vcfR.trim[,colnames(vcfR.trim@gt) != "D_tris_35052"]
+vcfR.trim<-vcfR.trim[,colnames(vcfR.trim@gt) != "D_aen_32777"]
+vcfR.trim<-vcfR.trim[,colnames(vcfR.trim@gt) != "D_hir_6156"]
+```
+
+##Investigate technical replicate
+
+```{r}
+#filter
+vcfR.trim.100<-missing_by_snp(vcfR.trim,cutoff = 1)
+
+#convert to genlight
+gen<-vcfR2genlight(vcfR.trim.100)
+#shorten names
+gen@ind.names<-gsub("D_","",gen@ind.names)
+#assign populations (a StaMPP requirement)
+gen@pop<-as.factor(gen@ind.names)
+#generate pairwise divergence matrix
+sample.div <- stamppNeisD(gen, pop = FALSE)
+#export for splitstree
+stamppPhylip(distance.mat=sample.div, file="~/Desktop/solomon.dicaeum.v2/test.100.all.splits.txt")
+```
+
+![Technical replicate clustering](technical%20replicates%20grouping%20together.png)
+
+Technical replicates cluster together
+
+##Remove technical replicate
+
+```{r}
+#remove technical replicates
+vcfR.trim<-vcfR.trim[,colnames(vcfR.trim@gt) != "D_exi_27657b"]
+```
+
+##Removing invariant SNPs
+
+```{r}
+vcfR.trim<-min_mac(vcfR.trim,min.mac = 1)
+```
+
+##Filter for missing data per SNP
+
+```{r}
+#View missingness per SNP
+missingness<-missing_by_snp(vcfR=vcfR.trim)
+#Filter for cutoff
+vcfR.trim<-missing_by_snp(vcfR=vcfR.trim, cutoff = 1)
+```
+
+##Visualize depth and quality
+
+```{r}
+#plot depth per snp and per sample
+dp <- extract.gt(vcfR.trim, element = "DP", as.numeric=TRUE)
+heatmap.bp(dp, rlabels = FALSE)
+
+#plot genotype quality per snp and per sample
+gq <- extract.gt(vcfR.trim, element = "GQ", as.numeric=TRUE)
+heatmap.bp(gq, rlabels = FALSE)
+```
+
+##Linkage filter
+
+```{r}
+#perform linkage filtering to get a reduced vcf with only unlinked SNPs
+vcfR.thin<-distance_thin(vcfR.trim, min.distance = 1000)
+```
+
+##Write vcf for downstream analyses
+
+```{r}
+#get info for all SNPs passing filtering vcf dataset
+vcfR.trim
+
+#write to disk
+#vcfR::write.vcf(vcfR.trim, file = "~/Desktop/Projects/Dicaeum/vcfs/filtered.miat.snps.vcf.gz")
+
+#get info for the thinned SNP dataset
+vcfR.thin
+
+#write to disk
+#vcfR::write.vcf(vcfR.thin, file = "~/Desktop/Projects/Dicaeum/vcfs/filtered.miat.unlinked.snps.vcf.gz")
+```

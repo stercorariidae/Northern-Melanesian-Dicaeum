@@ -1,0 +1,29 @@
+---
+title: "Concatenated ML tree"
+author: "Ryan Andrews"
+format: html
+editor: visual
+---
+
+#load in vcf file
+```{r}
+#load packages
+library(vcfR)
+
+# load in vcf
+vcfR<- read.vcfR("~/Desktop/Projects/Dicaeum/vcfs/filtered.miat.unlinked.snps.vcf.gz")
+```
+
+#generate white list with loci
+```{r}
+head(vcfR@fix)
+head(vcfR@fix[,1])
+#get a list of just locus names to use as whitelist for stacks
+whitelist <- unique(sub(":.*", "", vcfR@fix[, "ID"]))
+
+#make sure each locus is unique
+length(unique(whitelist)) == length(whitelist)
+
+#write out white list
+#write.table(whitelist, file = "~/Desktop/Projects/Dicaeum/iqtree/dicaeum.unlinked.whitelist.txt", quote = F, row.names = F, col.names = F)
+```

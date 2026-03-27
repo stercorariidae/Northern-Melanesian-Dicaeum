@@ -1,0 +1,717 @@
+populations v2.68, executed 2025-11-17 16:37:21 (zlib-1.3.1)
+populations -P stacks/ -M popmap/retained_samples_popmap.txt -O ./iqtree --whitelist ./iqtree/dicaeum.unlinked.whitelist.txt --phylip-var-all
+Locus/sample distributions will be written to './iqtree/populations.log.distribs'.
+populations parameters selected:
+  Percent samples limit per population: 0
+  Locus Population limit: 1
+  Percent samples overall: 0
+  Minor allele frequency cutoff: 0
+  Maximum observed heterozygosity cutoff: 1
+  Applying Fst correction: none.
+  Pi/Fis kernel smoothing: off
+  F-stats kernel smoothing: off
+  Bootstrap resampling: off
+
+Parsing population map...
+The population map contained 65 samples, 65 population(s), 1 group(s).
+Loaded 1294 whitelisted markers.
+Working on 65 samples.
+Working on 65 population(s):
+    32085b: D_aen_32085b
+    32013: D_aen_32013
+    32018: D_aen_32018
+    32000: D_aen_32000
+    32020: D_aen_32020
+    32050: D_aen_32050
+    32044: D_aen_32044
+    34914: D_aen_34914
+    34886: D_aen_34886
+    34884: D_aen_34884
+    34849: D_aen_34849
+    34850: D_aen_34850
+    34845: D_aen_34845
+    34844: D_aen_34844
+    34495: D_aen_34495
+    34500: D_aen_34500
+    34497: D_aen_34497
+    34487: D_aen_34487
+    34479: D_aen_34479
+    32799: D_aen_32799
+    32847: D_aen_32847
+    32808: D_aen_32808
+    32801: D_aen_32801
+    32732: D_aen_32732
+    32736: D_aen_32736
+    32729: D_aen_32729
+    32738: D_aen_32738
+    32765: D_aen_32765
+    32787: D_aen_32787
+    32775: D_aen_32775
+    35064: D_tris_35064
+    35032: D_tris_35032
+    35029: D_tris_35029
+    34951: D_tris_34951
+    35000: D_tris_35000
+    35018: D_tris_35018
+    34956: D_tris_34956
+    35069: D_tris_35069
+    13531: D_tris_13531
+    13542: D_tris_13542
+    27673: D_exi_27673
+    27655: D_exi_27655
+    27667: D_exi_27667
+    27683: D_exi_27683
+    27697: D_exi_27697
+    12896: D_geel_12896
+    4777: D_geel_4777
+    16476: D_geel_16476
+    14636: D_geel_14636
+    27676: D_exi_27676
+    27690: D_exi_27690
+    27695: D_exi_27695
+    27715: D_exi_27715
+    27756: D_exi_27756
+    27854: D_exi_27854
+    27657a: D_exi_27657a
+    31391: D_geel_31391
+    34221: D_hir_34221
+    8821: D_hir_8821
+    8838: D_hir_8838
+    22673: D_hir_22673
+    10365: D_con_10365
+    10435: D_con_10435
+    10391: D_con_10391
+    23425: D_con_23425
+Working on 1 group(s) of populations:
+    defaultgrp: 32085b, 32013, 32018, 32000, 32020, 32050, 32044, 34914, 34886, 34884, 34849, 34850, 34845, 34844, 34495, 34500, 34497, 34487, 34479, 32799, 32847, 32808, 32801, 32732, 32736, 32729, 32738, 32765, 32787, 32775, 35064, 35032, 35029, 34951, 35000, 35018, 34956, 35069, 13531, 13542, 27673, 27655, 27667, 27683, 27697, 12896, 4777, 16476, 14636, 27676, 27690, 27695, 27715, 27756, 27854, 27657a, 31391, 34221, 8821, 8838, 22673, 10365, 10435, 10391, 23425
+
+All sites (fixed and variable) will be written in Phylip format to './iqtree/populations.all.phylip'
+Raw haplotypes will be written to './iqtree/populations.haplotypes.tsv'
+Population-level summary statistics will be written to './iqtree/populations.sumstats.tsv'
+Population-level haplotype summary statistics will be written to './iqtree/populations.hapstats.tsv'
+
+Processing data in batches:
+  * load a batch of catalog loci and apply filters
+  * compute SNP- and haplotype-wise per-population statistics
+  * write the above statistics in the output files
+  * export the genotypes/haplotypes in specified format(s)
+More details in './iqtree/populations.log.distribs'.
+
+Now processing...
+VWZP01000015.1 
+VWZP01000046.1 
+VWZP01000054.1 
+VWZP01000136.1 
+VWZP01000141.1 
+VWZP01000199.1 
+VWZP01000201.1 
+VWZP01000213.1 
+VWZP01000218.1 
+VWZP01000227.1 
+VWZP01000229.1 
+VWZP01000283.1 
+VWZP01000293.1 
+VWZP01000395.1 
+VWZP01000401.1 
+VWZP01000406.1 
+VWZP01000481.1 
+VWZP01000482.1 
+VWZP01000487.1 
+VWZP01000494.1 
+VWZP01000505.1 
+VWZP01000514.1 
+VWZP01000516.1 
+VWZP01000550.1 
+VWZP01000604.1 
+VWZP01000611.1 
+VWZP01000666.1 
+VWZP01000730.1 
+VWZP01000751.1 
+VWZP01000761.1 
+VWZP01000836.1 
+VWZP01000837.1 
+VWZP01000846.1 
+VWZP01000863.1 
+VWZP01000866.1 
+VWZP01000874.1 
+VWZP01000963.1 
+VWZP01000970.1 
+VWZP01000976.1 
+VWZP01000980.1 
+VWZP01000982.1 
+VWZP01000992.1 
+VWZP01001100.1 
+VWZP01001103.1 
+VWZP01001127.1 
+VWZP01001128.1 
+VWZP01001133.1 
+VWZP01001138.1 
+VWZP01001140.1 
+VWZP01001207.1 
+VWZP01001276.1 
+VWZP01001285.1 
+VWZP01001296.1 
+VWZP01001297.1 
+VWZP01001339.1 
+VWZP01001397.1 
+VWZP01001398.1 
+VWZP01001404.1 
+VWZP01001408.1 
+VWZP01001410.1 
+VWZP01001424.1 
+VWZP01001428.1 
+VWZP01001440.1 
+VWZP01001447.1 
+VWZP01001456.1 
+VWZP01001457.1 
+VWZP01001462.1 
+VWZP01001463.1 
+VWZP01001480.1 
+VWZP01001483.1 
+VWZP01001498.1 
+VWZP01001589.1 
+VWZP01001590.1 
+VWZP01001591.1 
+VWZP01001604.1 
+VWZP01001615.1 
+VWZP01001621.1 
+VWZP01001636.1 
+VWZP01001730.1 
+VWZP01001738.1 
+VWZP01001883.1 
+VWZP01001885.1 
+VWZP01001887.1 
+VWZP01001888.1 
+VWZP01001895.1 
+VWZP01001896.1 
+VWZP01001933.1 
+VWZP01001961.1 
+VWZP01001962.1 
+VWZP01001966.1 
+VWZP01002027.1 
+VWZP01002089.1 
+VWZP01002136.1 
+VWZP01002143.1 
+VWZP01002147.1 
+VWZP01002149.1 
+VWZP01002151.1 
+VWZP01002160.1 
+VWZP01002201.1 
+VWZP01002202.1 
+VWZP01002209.1 
+VWZP01002215.1 
+VWZP01002217.1 
+VWZP01002231.1 
+VWZP01002263.1 
+VWZP01002274.1 
+VWZP01002288.1 
+VWZP01002292.1 
+VWZP01002293.1 
+VWZP01002325.1 
+VWZP01002386.1 
+VWZP01002389.1 
+VWZP01002396.1 
+VWZP01002400.1 
+VWZP01002409.1 
+VWZP01002415.1 
+VWZP01002422.1 
+VWZP01002438.1 
+VWZP01002541.1 
+VWZP01002550.1 
+VWZP01002581.1 
+VWZP01002584.1 
+VWZP01002662.1 
+VWZP01002663.1 
+VWZP01002675.1 
+VWZP01002782.1 
+VWZP01002787.1 
+VWZP01002789.1 
+VWZP01002793.1 
+VWZP01002803.1 
+VWZP01002845.1 
+VWZP01002902.1 
+VWZP01002903.1 
+VWZP01002907.1 
+VWZP01002916.1 
+VWZP01002925.1 
+VWZP01002928.1 
+VWZP01002958.1 
+VWZP01002968.1 
+VWZP01002982.1 
+VWZP01003013.1 
+VWZP01003085.1 
+VWZP01003088.1 
+VWZP01003223.1 
+VWZP01003230.1 
+VWZP01003239.1 
+VWZP01003306.1 
+VWZP01003316.1 
+VWZP01003375.1 
+VWZP01003405.1 
+VWZP01003407.1 
+VWZP01003414.1 
+VWZP01003416.1 
+VWZP01003422.1 
+VWZP01003447.1 
+VWZP01003543.1 
+VWZP01003549.1 
+VWZP01003551.1 
+VWZP01003553.1 
+VWZP01003556.1 
+VWZP01003557.1 
+VWZP01003583.1 
+VWZP01003639.1 
+VWZP01003650.1 
+VWZP01003653.1 
+VWZP01003661.1 
+VWZP01003703.1 
+VWZP01003795.1 
+VWZP01003801.1 
+VWZP01003802.1 
+VWZP01003807.1 
+VWZP01003839.1 
+VWZP01003889.1 
+VWZP01004023.1 
+VWZP01004025.1 
+VWZP01004026.1 
+VWZP01004032.1 
+VWZP01004038.1 
+VWZP01004041.1 
+VWZP01004042.1 
+VWZP01004072.1 
+VWZP01004161.1 
+VWZP01004165.1 
+VWZP01004178.1 
+VWZP01004258.1 
+VWZP01004262.1 
+VWZP01004264.1 
+VWZP01004265.1 
+VWZP01004280.1 
+VWZP01004286.1 
+VWZP01004289.1 
+VWZP01004354.1 
+VWZP01004356.1 
+VWZP01004373.1 
+VWZP01004407.1 
+VWZP01004408.1 
+VWZP01004414.1 
+VWZP01004435.1 
+VWZP01004466.1 
+VWZP01004477.1 
+VWZP01004496.1 
+VWZP01004506.1 
+VWZP01004510.1 
+VWZP01004535.1 
+VWZP01004602.1 
+VWZP01004604.1 
+VWZP01004607.1 
+VWZP01004621.1 
+VWZP01004622.1 
+VWZP01004695.1 
+VWZP01004697.1 
+VWZP01004708.1 
+VWZP01004812.1 
+VWZP01004814.1 
+VWZP01004815.1 
+VWZP01004818.1 
+VWZP01004820.1 
+VWZP01004822.1 
+VWZP01004826.1 
+VWZP01004829.1 
+VWZP01004914.1 
+VWZP01004916.1 
+VWZP01004924.1 
+VWZP01004928.1 
+VWZP01004941.1 
+VWZP01005025.1 
+VWZP01005033.1 
+VWZP01005035.1 
+VWZP01005148.1 
+VWZP01005149.1 
+VWZP01005152.1 
+VWZP01005162.1 
+VWZP01005187.1 
+VWZP01005209.1 
+VWZP01005221.1 
+VWZP01005230.1 
+VWZP01005240.1 
+VWZP01005248.1 
+VWZP01005252.1 
+VWZP01005255.1 
+VWZP01005256.1 
+VWZP01005257.1 
+VWZP01005259.1 
+VWZP01005261.1 
+VWZP01005262.1 
+VWZP01005263.1 
+VWZP01005270.1 
+VWZP01005377.1 
+VWZP01005411.1 
+VWZP01005507.1 
+VWZP01005513.1 
+VWZP01005514.1 
+VWZP01005527.1 
+VWZP01005528.1 
+VWZP01005541.1 
+VWZP01005658.1 
+VWZP01005667.1 
+VWZP01005668.1 
+VWZP01005676.1 
+VWZP01005688.1 
+VWZP01005699.1 
+VWZP01005794.1 
+VWZP01005800.1 
+VWZP01005847.1 
+VWZP01005851.1 
+VWZP01005854.1 
+VWZP01005861.1 
+VWZP01005863.1 
+VWZP01005867.1 
+VWZP01005979.1 
+VWZP01005998.1 
+VWZP01006004.1 
+VWZP01006016.1 
+VWZP01006030.1 
+VWZP01006044.1 
+VWZP01006072.1 
+VWZP01006139.1 
+VWZP01006142.1 
+VWZP01006144.1 
+VWZP01006148.1 
+VWZP01006149.1 
+VWZP01006150.1 
+VWZP01006196.1 
+VWZP01006227.1 
+VWZP01006234.1 
+VWZP01006244.1 
+VWZP01006249.1 
+VWZP01006266.1 
+VWZP01006274.1 
+VWZP01006275.1 
+VWZP01006280.1 
+VWZP01006282.1 
+VWZP01006283.1 
+VWZP01006294.1 
+VWZP01006297.1 
+VWZP01006299.1 
+VWZP01006301.1 
+VWZP01006385.1 
+VWZP01006390.1 
+VWZP01006397.1 
+VWZP01006402.1 
+VWZP01006414.1 
+VWZP01006417.1 
+VWZP01006420.1 
+VWZP01006436.1 
+VWZP01006437.1 
+VWZP01006520.1 
+VWZP01006525.1 
+VWZP01006528.1 
+VWZP01006535.1 
+VWZP01006607.1 
+VWZP01006608.1 
+VWZP01006610.1 
+VWZP01006611.1 
+VWZP01006612.1 
+VWZP01006614.1 
+VWZP01006624.1 
+VWZP01006688.1 
+VWZP01006692.1 
+VWZP01006693.1 
+VWZP01006697.1 
+VWZP01006698.1 
+VWZP01006707.1 
+VWZP01006719.1 
+VWZP01006729.1 
+VWZP01006814.1 
+VWZP01006838.1 
+VWZP01006849.1 
+VWZP01006852.1 
+VWZP01006853.1 
+VWZP01006907.1 
+VWZP01006935.1 
+VWZP01006945.1 
+VWZP01006954.1 
+VWZP01006956.1 
+VWZP01006959.1 
+VWZP01006970.1 
+VWZP01006979.1 
+VWZP01006994.1 
+VWZP01007019.1 
+VWZP01007022.1 
+VWZP01007080.1 
+VWZP01007082.1 
+VWZP01007086.1 
+VWZP01007087.1 
+VWZP01007102.1 
+VWZP01007103.1 
+VWZP01007108.1 
+VWZP01007147.1 
+VWZP01007194.1 
+VWZP01007209.1 
+VWZP01007210.1 
+VWZP01007227.1 
+VWZP01007248.1 
+VWZP01007276.1 
+VWZP01007282.1 
+VWZP01007284.1 
+VWZP01007290.1 
+VWZP01007296.1 
+VWZP01007297.1 
+VWZP01007306.1 
+VWZP01007350.1 
+VWZP01007456.1 
+VWZP01007499.1 
+VWZP01007510.1 
+VWZP01007519.1 
+VWZP01007586.1 
+VWZP01007593.1 
+VWZP01007615.1 
+VWZP01007619.1 
+VWZP01007621.1 
+VWZP01007623.1 
+VWZP01007629.1 
+VWZP01007646.1 
+VWZP01007712.1 
+VWZP01007713.1 
+VWZP01007715.1 
+VWZP01007814.1 
+VWZP01007817.1 
+VWZP01007825.1 
+VWZP01007832.1 
+VWZP01007855.1 
+VWZP01007922.1 
+VWZP01007923.1 
+VWZP01007936.1 
+VWZP01007937.1 
+VWZP01007938.1 
+VWZP01007940.1 
+VWZP01007953.1 
+VWZP01008023.1 
+VWZP01008031.1 
+VWZP01008035.1 
+VWZP01008043.1 
+VWZP01008069.1 
+VWZP01008070.1 
+VWZP01008072.1 
+VWZP01008078.1 
+VWZP01008083.1 
+VWZP01008087.1 
+VWZP01008098.1 
+VWZP01008105.1 
+VWZP01008110.1 
+VWZP01008131.1 
+VWZP01008261.1 
+VWZP01008265.1 
+VWZP01008268.1 
+VWZP01008285.1 
+VWZP01008288.1 
+VWZP01008289.1 
+VWZP01008290.1 
+VWZP01008292.1 
+VWZP01008343.1 
+VWZP01008344.1 
+VWZP01008345.1 
+VWZP01008346.1 
+VWZP01008351.1 
+VWZP01008431.1 
+VWZP01008438.1 
+VWZP01008455.1 
+VWZP01008462.1 
+VWZP01008548.1 
+VWZP01008549.1 
+VWZP01008557.1 
+VWZP01008566.1 
+VWZP01008589.1 
+VWZP01008598.1 
+VWZP01008606.1 
+VWZP01008627.1 
+VWZP01008648.1 
+VWZP01008669.1 
+VWZP01008812.1 
+VWZP01008818.1 
+VWZP01008822.1 
+VWZP01008835.1 
+VWZP01008841.1 
+VWZP01008845.1 
+VWZP01008898.1 
+VWZP01008954.1 
+VWZP01008963.1 
+VWZP01008976.1 
+VWZP01008983.1 
+VWZP01008990.1 
+VWZP01009082.1 
+VWZP01009092.1 
+VWZP01009096.1 
+VWZP01009101.1 
+VWZP01009157.1 
+VWZP01009162.1 
+VWZP01009168.1 
+VWZP01009169.1 
+VWZP01009174.1 
+VWZP01009179.1 
+VWZP01009240.1 
+VWZP01009260.1 
+VWZP01009265.1 
+VWZP01009271.1 
+VWZP01009280.1 
+VWZP01009281.1 
+VWZP01009282.1 
+VWZP01009283.1 
+VWZP01009353.1 
+VWZP01009369.1 
+VWZP01009370.1 
+VWZP01009376.1 
+VWZP01009377.1 
+VWZP01009381.1 
+VWZP01009464.1 
+VWZP01009494.1 
+VWZP01009500.1 
+VWZP01009503.1 
+VWZP01009612.1 
+VWZP01009615.1 
+VWZP01009630.1 
+VWZP01009633.1 
+VWZP01009637.1 
+VWZP01009664.1 
+VWZP01009737.1 
+VWZP01009758.1 
+VWZP01009762.1 
+VWZP01009766.1 
+VWZP01009783.1 
+VWZP01009788.1 
+VWZP01009794.1 
+VWZP01009852.1 
+VWZP01009871.1 
+VWZP01009880.1 
+VWZP01009881.1 
+VWZP01009885.1 
+VWZP01009889.1 
+VWZP01009909.1 
+VWZP01009912.1 
+VWZP01009918.1 
+VWZP01009921.1 
+VWZP01009930.1 
+VWZP01009933.1 
+VWZP01009939.1 
+VWZP01009941.1 
+VWZP01009943.1 
+VWZP01009947.1 
+VWZP01009951.1 
+VWZP01009979.1 
+VWZP01010151.1 
+VWZP01010156.1 
+VWZP01010159.1 
+VWZP01010162.1 
+VWZP01010174.1 
+VWZP01010183.1 
+VWZP01010210.1 
+VWZP01010230.1 
+VWZP01010237.1 
+VWZP01010268.1 
+VWZP01010273.1 
+VWZP01010280.1 
+VWZP01010282.1 
+VWZP01010284.1 
+VWZP01010309.1 
+VWZP01010350.1 
+VWZP01010353.1 
+VWZP01010358.1 
+VWZP01010367.1 
+VWZP01010430.1 
+VWZP01010435.1 
+VWZP01010450.1 
+VWZP01010453.1 
+VWZP01010557.1 
+VWZP01010561.1 
+VWZP01010576.1 
+VWZP01010707.1 
+VWZP01010713.1 
+VWZP01010715.1 
+VWZP01010724.1 
+VWZP01010741.1 
+VWZP01010878.1 
+VWZP01010881.1 
+VWZP01010888.1 
+VWZP01010904.1 
+VWZP01010941.1 
+VWZP01010949.1 
+VWZP01010953.1 
+VWZP01010965.1 
+VWZP01010966.1 
+VWZP01010997.1 
+VWZP01016760.1 
+VWZP01016764.1 
+
+Removed 217746 loci that did not pass sample/population constraints from 219040 loci.
+Kept 1294 loci, composed of 125451 sites; 1 of those sites were filtered, 14989 variant sites remained.
+    125356 genomic sites, of which 0 were covered by multiple loci (0.0%).
+Mean genotyped sites per locus: 96.87bp (stderr 0.08).
+
+Population summary statistics (more detail in populations.sumstats_summary.tsv):
+  32085b: 1 samples per locus; pi: 0.030386; all/variant/polymorphic sites: 122898/14941/454; private alleles: 111
+  32013: 1 samples per locus; pi: 0.037713; all/variant/polymorphic sites: 122929/14955/564; private alleles: 90
+  32018: 1 samples per locus; pi: 0.035635; all/variant/polymorphic sites: 122955/14957/533; private alleles: 102
+  32000: 1 samples per locus; pi: 0.030478; all/variant/polymorphic sites: 122871/14929/455; private alleles: 73
+  32020: 1 samples per locus; pi: 0.031011; all/variant/polymorphic sites: 123000/14898/462; private alleles: 69
+  32050: 1 samples per locus; pi: 0.03473; all/variant/polymorphic sites: 122989/14944/519; private alleles: 93
+  32044: 1 samples per locus; pi: 0.032972; all/variant/polymorphic sites: 122912/14952/493; private alleles: 87
+  34914: 1 samples per locus; pi: 0.031654; all/variant/polymorphic sites: 122894/14911/472; private alleles: 60
+  34886: 1 samples per locus; pi: 0.035578; all/variant/polymorphic sites: 123070/14953/532; private alleles: 117
+  34884: 1 samples per locus; pi: 0.032437; all/variant/polymorphic sites: 122921/14952/485; private alleles: 87
+  34849: 1 samples per locus; pi: 0.038112; all/variant/polymorphic sites: 122976/14956/570; private alleles: 112
+  34850: 1 samples per locus; pi: 0.032811; all/variant/polymorphic sites: 122964/14934/490; private alleles: 90
+  34845: 1 samples per locus; pi: 0.035621; all/variant/polymorphic sites: 123024/14963/533; private alleles: 45
+  34844: 1 samples per locus; pi: 0.035843; all/variant/polymorphic sites: 122925/14954/536; private alleles: 47
+  34495: 1 samples per locus; pi: 0.028017; all/variant/polymorphic sites: 122915/14955/419; private alleles: 40
+  34500: 1 samples per locus; pi: 0.031691; all/variant/polymorphic sites: 122923/14957/474; private alleles: 45
+  34497: 1 samples per locus; pi: 0.029486; all/variant/polymorphic sites: 122970/14956/441; private alleles: 42
+  34487: 1 samples per locus; pi: 0.031175; all/variant/polymorphic sites: 122947/14948/466; private alleles: 50
+  34479: 1 samples per locus; pi: 0.03278; all/variant/polymorphic sites: 122898/14948/490; private alleles: 60
+  32799: 1 samples per locus; pi: 0.030926; all/variant/polymorphic sites: 122868/14939/462; private alleles: 89
+  32847: 1 samples per locus; pi: 0.0301; all/variant/polymorphic sites: 122968/14950/450; private alleles: 90
+  32808: 1 samples per locus; pi: 0.029239; all/variant/polymorphic sites: 122964/14946/437; private alleles: 103
+  32801: 1 samples per locus; pi: 0.032491; all/variant/polymorphic sites: 122985/14958/486; private alleles: 119
+  32732: 1 samples per locus; pi: 0.024671; all/variant/polymorphic sites: 122954/14957/369; private alleles: 58
+  32736: 1 samples per locus; pi: 0.023522; all/variant/polymorphic sites: 122874/14922/351; private alleles: 50
+  32729: 1 samples per locus; pi: 0.023693; all/variant/polymorphic sites: 122910/14941/354; private alleles: 54
+  32738: 1 samples per locus; pi: 0.025825; all/variant/polymorphic sites: 122888/14947/386; private alleles: 62
+  32765: 1 samples per locus; pi: 0.025909; all/variant/polymorphic sites: 122848/14937/387; private alleles: 62
+  32787: 1 samples per locus; pi: 0.022948; all/variant/polymorphic sites: 122865/14947/343; private alleles: 66
+  32775: 1 samples per locus; pi: 0.025881; all/variant/polymorphic sites: 122909/14953/387; private alleles: 71
+  35064: 1 samples per locus; pi: 0.013847; all/variant/polymorphic sites: 122886/14949/207; private alleles: 20
+  35032: 1 samples per locus; pi: 0.015115; all/variant/polymorphic sites: 122930/14952/226; private alleles: 22
+  35029: 1 samples per locus; pi: 0.015861; all/variant/polymorphic sites: 122873/14942/237; private alleles: 33
+  34951: 1 samples per locus; pi: 0.015052; all/variant/polymorphic sites: 122886/14948/225; private alleles: 17
+  35000: 1 samples per locus; pi: 0.015128; all/variant/polymorphic sites: 122861/14939/226; private alleles: 19
+  35018: 1 samples per locus; pi: 0.014912; all/variant/polymorphic sites: 122892/14954/223; private alleles: 21
+  34956: 1 samples per locus; pi: 0.014381; all/variant/polymorphic sites: 122927/14950/215; private alleles: 28
+  35069: 1 samples per locus; pi: 0.015788; all/variant/polymorphic sites: 122866/14948/236; private alleles: 33
+  13531: 1 samples per locus; pi: 0.014579; all/variant/polymorphic sites: 123006/14953/218; private alleles: 21
+  13542: 1 samples per locus; pi: 0.016387; all/variant/polymorphic sites: 122891/14951/245; private alleles: 23
+  27673: 1 samples per locus; pi: 0.025585; all/variant/polymorphic sites: 123007/14970/383; private alleles: 45
+  27655: 1 samples per locus; pi: 0.039631; all/variant/polymorphic sites: 123037/14963/593; private alleles: 368
+  27667: 1 samples per locus; pi: 0.023488; all/variant/polymorphic sites: 122941/14944/351; private alleles: 37
+  27683: 1 samples per locus; pi: 0.022531; all/variant/polymorphic sites: 123014/14957/337; private alleles: 65
+  27697: 1 samples per locus; pi: 0.023539; all/variant/polymorphic sites: 122940/14954/352; private alleles: 55
+  12896: 1 samples per locus; pi: 0.050107; all/variant/polymorphic sites: 122952/14948/749; private alleles: 259
+  4777: 1 samples per locus; pi: 0.049675; all/variant/polymorphic sites: 122956/14937/742; private alleles: 273
+  16476: 1 samples per locus; pi: 0.045047; all/variant/polymorphic sites: 122963/14940/673; private alleles: 250
+  14636: 1 samples per locus; pi: 0.048836; all/variant/polymorphic sites: 123096/14948/730; private alleles: 261
+  27676: 1 samples per locus; pi: 0.025057; all/variant/polymorphic sites: 122986/14966/375; private alleles: 55
+  27690: 1 samples per locus; pi: 0.025065; all/variant/polymorphic sites: 123070/14961/375; private alleles: 54
+  27695: 1 samples per locus; pi: 0.021929; all/variant/polymorphic sites: 122918/14912/327; private alleles: 53
+  27715: 1 samples per locus; pi: 0.025394; all/variant/polymorphic sites: 123025/14964/380; private alleles: 55
+  27756: 1 samples per locus; pi: 0.022785; all/variant/polymorphic sites: 123025/14966/341; private alleles: 60
+  27854: 1 samples per locus; pi: 0.004089; all/variant/polymorphic sites: 122857/14918/61; private alleles: 76
+  27657a: 1 samples per locus; pi: 0.04097; all/variant/polymorphic sites: 123001/14962/613; private alleles: 389
+  31391: 1 samples per locus; pi: 0.048851; all/variant/polymorphic sites: 122912/14923/729; private alleles: 257
+  34221: 1 samples per locus; pi: 0.040479; all/variant/polymorphic sites: 123012/14946/605; private alleles: 201
+  8821: 1 samples per locus; pi: 0.044721; all/variant/polymorphic sites: 122946/14937/668; private alleles: 204
+  8838: 1 samples per locus; pi: 0.038806; all/variant/polymorphic sites: 122972/14946/580; private alleles: 196
+  22673: 1 samples per locus; pi: 0.039448; all/variant/polymorphic sites: 122944/14931/589; private alleles: 195
+  10365: 1 samples per locus; pi: 0.044095; all/variant/polymorphic sites: 122802/14877/656; private alleles: 269
+  10435: 1 samples per locus; pi: 0.047648; all/variant/polymorphic sites: 122799/14901/710; private alleles: 311
+  10391: 1 samples per locus; pi: 0.044164; all/variant/polymorphic sites: 122912/14899/658; private alleles: 271
+  23425: 1 samples per locus; pi: 0.045863; all/variant/polymorphic sites: 122933/14914/684; private alleles: 338
+Populations is done.
